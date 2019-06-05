@@ -2,6 +2,7 @@ const express = require('express');
 const hbs = require('hbs');
 const fs =require('fs');
 
+const port = process.env.PORT || 3030;   //setting up the port number for heroku
 //making new express app
 var app = express();
 
@@ -69,6 +70,6 @@ app.get('/bad',(req,res) => {
   });
 });
 
-app.listen(3030,() => {            //it helps to bind the app to port on our machine
-console.log('server is up on port 3030');
+app.listen(port,() => {            //it helps to bind the app to port on our machine
+console.log(`server is up on port 3030 ${port}`);
 });
