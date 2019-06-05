@@ -1,0 +1,21 @@
+
+
+
+<!-- this is a handlebars file -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">  <!--it lets the browser how to render characters -->
+    <title>Some website</title>
+  </head>
+  <body>
+    <!-- <h1>{{pageTitle}}</h1>         here we are injecting the dynamic data using hbs synthax -->
+    {{> header}}
+    <p>{{screamIt welcomeMessage}}</p>
+    <!-- <footer>
+      <p>copyright {{currentYear}}</p>
+    </footer> -->
+    {{> footer}}      <!--advanced templating=> here we are injecting the template directly using hbs synthax-->
+  </body>
+</html>
